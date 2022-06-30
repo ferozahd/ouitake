@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Modify the text in the input field, then click outside the field to fire the onchange event.</p>
+
+Enter some text: <input type="text" name="txt" id="text" >
+<div id="message"></div>
+<div id="message2"></div>
+<script>
+
+    document.getElementById("text").onkeyup=function(e){
+        document.getElementById("message").innerText=e.target.value;
+  
+        document.getElementById("message2").innerText=e.target.value.toLowerCase();
+
+    }
+</script>
+
+</body>
+</html>
